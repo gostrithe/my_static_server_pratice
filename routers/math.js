@@ -5,8 +5,21 @@ const pow = (a, n) => {
     }
     return a;
 };
-
-module.exports = {
+const mathApi = {
     add,
     pow
+}
+
+const handler = (request, response) => {
+    const reg = /\/math\/([a-z]+)\?a=(\d+)&b=(\d+)/;
+    const [, method, a, b] = reg.exec(request.url);
+    const result = mathApi[method](a * 1, b * 1);
+
+    response.end(JSON.stringify({
+        result
+    }));
+};
+
+module.exports = {
+    handler
 };

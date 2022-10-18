@@ -1,0 +1,21 @@
+{
+  "name": "my_static_server_pratice",
+  "version": "1.0.0",
+  "description": "to run start app.js, to listening at 8080...",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+
+    "start": "nodemon ./app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gostrithe/my_static_server_pratice.git"
+  },
+  "author": "jack",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gostrithe/my_static_server_pratice/issues"
+  },
+  "homepage": "https://github.com/gostrithe/my_static_server_pratice#readme"
+}

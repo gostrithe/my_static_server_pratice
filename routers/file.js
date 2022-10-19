@@ -9,7 +9,7 @@ const handleRequest = (request, response) => {
     // __dirname全局变量 表示当前执行脚本所在的目录
     // D:\桌面\H5二阶段\我的二阶段\my_static_server_pratice\routers
     // console.log(__dirname);
-    const joinPath = path.join(__dirname, '..', 'public', 'img', picFileName);
+    const joinPath = path.join(__dirname, '..', 'public', picFileName);
     // D:\桌面\H5二阶段\我的二阶段\my_static_server_pratice\public\img\huya.webp
     // console.log(joinPath);
     const picBuffer = fs.readFileSync(joinPath);

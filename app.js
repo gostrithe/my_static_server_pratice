@@ -4,8 +4,9 @@ const http = require('http');
 
 const requestListener = require('./routers/requestListener')
 
+// 创建服务器实例
 const server = http.createServer(requestListener);
-
+// 监听端口。
 server.listen(8080,
     () => console.log('listening at 8080...')
 );
